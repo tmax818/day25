@@ -15,7 +15,9 @@ class App extends Component {
   getQuotes = async () => {
     let num = Math.floor(Math.random() * 100);
     console.log(num);
-    let res = await fetch(`https://intense-retreat-39884.herokuapp.com/${num}`);
+    let res = await fetch(
+      `https://intense-retreat-39884.herokuapp.com/quotes/${num}`
+    );
     let data = await res.json();
     console.log(data);
     this.setState({ quote: data.quote });
