@@ -3,7 +3,6 @@
   "homepage": "http://www.tylermaxwell.co/day25/",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://pacific-sierra-39339.herokuapp.com",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
