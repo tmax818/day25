@@ -15,9 +15,7 @@ class App extends Component {
 
   fetchFacts = async () => {
     let num = Math.floor(Math.random() * 100);
-    const res = await axios.get(
-      `https://pacific-sierra-39339.herokuapp.com/api/facts/${num}`
-    );
+    const res = await axios.get(`/api/facts/${num}`);
     console.log(res.data);
     this.setState({ quote: res.data.quote, author: res.data.author });
   };
