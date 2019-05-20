@@ -16,7 +16,7 @@ class App extends Component {
     let num = Math.floor(Math.random() * 100);
     console.log(num);
     let res = await fetch(
-      `https://intense-retreat-39884.herokuapp.com/quotes/${num}`
+      `https://intense-retreat-39884.herokuapp.com/api/quotes/${num}`
     );
     let data = await res.json();
     console.log(data);
